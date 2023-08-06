@@ -16,6 +16,7 @@ use App\Http\Controllers\API\ContactController;
 
 
 Route::post('/add-contact',[ContactController::class,'store']);
+Route::get('/contacts',[ContactController::class,'index']);
 
 
 

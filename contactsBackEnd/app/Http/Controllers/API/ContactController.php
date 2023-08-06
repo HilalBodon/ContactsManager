@@ -19,5 +19,13 @@ class ContactController extends Controller
             'status'=> 200,
             'message'=>'Contact created successfully'
         ]);
-    }    
+    }  
+    
+    public function index(){
+        $contacts = Contact::all();
+        return response()->json([
+            'status'=> 200,
+            'contacts'=>$contacts
+        ]);
+    }
 }
