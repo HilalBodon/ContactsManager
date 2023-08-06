@@ -17,9 +17,25 @@ class ContactsTableSeeder extends Seeder
         DB::table('contacts')->insert([
             [
                 'name' => 'hilal',
-                'phone' => '11223334455',
-                'latitude' => 37.7749,
-                'longitude' => -122.4194,
+                'phone' => '33445566',
+                'latitude' => 37.77494356,
+                'longitude' => -122.41946443,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Bilal',
+                'phone' => '1234321',
+                'latitude' => 37.77494356,
+                'longitude' => -122.41946443,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Faysal',
+                'phone' => '03/456345',
+                'latitude' => 37.7749456,
+                'longitude' => -122.41456443,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
